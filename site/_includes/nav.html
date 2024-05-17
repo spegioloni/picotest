@@ -1,82 +1,149 @@
 <nav>
-    <ul>
-        <li><a href="#" id="brand"><strong>frame</strong></a></li>
-    </ul>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#pricing">Preise</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-    </ul>
-    <ul>
-        <div id="darkModeToggle">
-            <svg id="moon-icon" fill="none" height="24px" stroke="currentColor" viewBox="0 0 24 24">
-                <!-- SVG code for a moon icon (dark mode) -->
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path
-                            d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
-                    </g>
-                </svg>
-            </svg>
-            <input id="darkModeSwitch" name="darkmode" type="checkbox" role="switch" />
-            <svg id="sun-icon" fill="none" height="24px" stroke="currentColor" viewBox="0 0 24 24">
-                <!-- SVG code for a sun icon (light mode) -->
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path
-                            d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
-                    </g>
-                </svg>
-            </svg>
-        </div>
-    </ul>
-
+  <ul>
+    <li><div id="LogoDiv">
+        <a href="#">
+        <svg
+          id="Logo"
+          height="30"
+          viewBox="0 0 158 56"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="LogoRedesign">
+            <g id="frame">
+              <path
+                d="M5.49902 23.2623H9.87019V16.2877C9.87019 13.7164 10.4166 11.5737 11.5094 9.85952C12.6022 8.14533 14.0164 6.84898 15.752 5.97046C17.4876 5.09194 19.2875 4.65268 21.1517 4.65268C23.4658 4.65268 25.2229 4.96338 26.4228 5.58477C27.6441 6.20616 28.4155 6.66685 28.7369 6.96683L25.0086 14.1343C24.9014 13.9628 24.6336 13.7164 24.2051 13.395C23.7765 13.0736 23.2087 12.9129 22.5016 12.9129C22.0516 12.9129 21.6016 13.0308 21.1517 13.2665C20.7017 13.5022 20.3267 13.92 20.0267 14.52C19.7482 15.1199 19.6089 15.9984 19.6089 17.1555V23.2623H24.8504V31.3297L19.6089 31.2975V49.65H9.87019V31.2975H5.49902V23.2623Z"
+                fill="var(--pico-primary)"
+              />
+              <path
+                d="M34.6212 49.65H24.8504V23.2623H34.6212V26.9987C34.7927 26.5058 35.0498 26.23 35.714 25.48C36.3783 24.7086 37.3104 24.023 38.5103 23.423C39.7102 22.8016 41.178 22.4909 42.9136 22.4909C44.135 22.4909 45.2599 22.6838 46.2884 23.0694C47.3169 23.4337 48.0669 23.7873 48.5383 24.1301L44.7456 32.0689C44.4457 31.7047 43.91 31.3297 43.1386 30.944C42.3886 30.5369 41.4458 30.3333 40.3102 30.3333C39.0031 30.3333 37.921 30.6654 37.064 31.3297C36.2283 31.9939 35.6069 32.7974 35.1998 33.7402C34.8141 34.683 34.6212 35.5723 34.6212 36.4079V49.65Z"
+                fill="var(--pico-primary)"
+              />
+              <path
+                d="M66.4564 49.65V45.3753C66.2635 45.8038 65.7707 46.4252 64.9779 47.2394C64.2065 48.0537 63.178 48.7929 61.8923 49.4572C60.6067 50.1 59.1068 50.4214 57.3926 50.4214C54.8213 50.4214 52.5715 49.8 50.643 48.5572C48.7145 47.293 47.2146 45.611 46.1433 43.5111C45.0719 41.3898 44.5362 39.0435 44.5362 36.4722C44.5362 33.9009 45.0719 31.5654 46.1433 29.4655C47.2146 27.3442 48.7145 25.6514 50.643 24.3872C52.5715 23.123 54.8213 22.4909 57.3926 22.4909C59.0425 22.4909 60.4889 22.7588 61.7316 23.2944C62.9744 23.8087 63.9815 24.4301 64.7529 25.1586C65.5243 25.8657 66.0599 26.5192 66.3599 27.1192V23.2623H76.0665V49.65H66.4564ZM54.1142 36.4722C54.1142 37.6722 54.3928 38.7542 54.9499 39.7185C55.507 40.6613 56.2462 41.4005 57.1676 41.9362C58.1104 42.4719 59.1496 42.7397 60.2853 42.7397C61.4638 42.7397 62.503 42.4719 63.403 41.9362C64.3029 41.4005 65.01 40.6613 65.5243 39.7185C66.0599 38.7542 66.3278 37.6722 66.3278 36.4722C66.3278 35.2723 66.0599 34.2009 65.5243 33.2581C65.01 32.2939 64.3029 31.5439 63.403 31.0083C62.503 30.4512 61.4638 30.1726 60.2853 30.1726C59.1496 30.1726 58.1104 30.4512 57.1676 31.0083C56.2462 31.5439 55.507 32.2939 54.9499 33.2581C54.3928 34.2009 54.1142 35.2723 54.1142 36.4722Z"
+                fill="var(--pico-primary)"
+              />
+              <path
+                d="M114.054 22.4909C116.047 22.4909 117.804 22.9087 119.325 23.7444C120.847 24.5586 122.036 25.8229 122.893 27.537C123.771 29.2512 124.211 31.4582 124.211 34.1581V49.65H114.6V35.6366C114.6 33.7938 114.322 32.3046 113.765 31.169C113.208 30.0333 112.104 29.4655 110.454 29.4655C109.469 29.4655 108.601 29.7226 107.851 30.2369C107.101 30.7511 106.522 31.469 106.115 32.3903C105.708 33.2903 105.505 34.3724 105.505 35.6366V49.65H96.5373V35.6366C96.5373 33.7938 96.2266 32.3046 95.6052 31.169C95.0052 30.0333 93.9339 29.4655 92.3911 29.4655C91.4054 29.4655 90.5376 29.7226 89.7877 30.2369C89.0377 30.7297 88.4592 31.4368 88.0521 32.3582C87.6664 33.2581 87.4735 34.3509 87.4735 35.6366V49.65H77.767V23.2623H87.4735V27.0228C87.7307 26.3585 88.2878 25.6836 89.1449 24.9979C90.0234 24.2908 91.1055 23.7016 92.3911 23.2302C93.6767 22.7373 95.0374 22.4909 96.473 22.4909C98.0372 22.4909 99.3443 22.7266 100.394 23.198C101.444 23.648 102.301 24.2587 102.965 25.03C103.651 25.8014 104.198 26.6371 104.605 27.537C104.905 26.7657 105.494 25.9943 106.372 25.2229C107.272 24.4301 108.387 23.7765 109.715 23.2623C111.065 22.748 112.511 22.4909 114.054 22.4909Z"
+                fill="var(--pico-primary)"
+              />
+              <path
+                d="M133.149 38.5292C133.213 39.472 133.513 40.3077 134.049 41.0362C134.584 41.7648 135.324 42.3433 136.267 42.7719C137.231 43.179 138.366 43.3825 139.673 43.3825C140.916 43.3825 142.03 43.254 143.016 42.9968C144.023 42.7397 144.891 42.4183 145.62 42.0326C146.369 41.6469 146.948 41.2505 147.355 40.8434L151.148 46.8859C150.612 47.4644 149.851 48.0323 148.866 48.5894C147.902 49.125 146.627 49.5643 145.041 49.9071C143.455 50.25 141.452 50.4214 139.031 50.4214C136.117 50.4214 133.524 49.875 131.253 48.7822C128.981 47.6894 127.192 46.0824 125.885 43.9611C124.578 41.8398 123.924 39.2471 123.924 36.183C123.924 33.6117 124.481 31.2975 125.596 29.2405C126.731 27.1621 128.371 25.5229 130.513 24.3229C132.656 23.1016 135.238 22.4909 138.259 22.4909C141.131 22.4909 143.616 23.0159 145.716 24.0658C147.837 25.1158 149.466 26.6799 150.601 28.7584C151.758 30.8154 152.337 33.3867 152.337 36.4722C152.337 36.6436 152.326 36.9865 152.305 37.5007C152.305 38.015 152.283 38.3578 152.241 38.5292H133.149ZM143.145 33.4188C143.123 32.7332 142.941 32.0582 142.598 31.394C142.255 30.7083 141.741 30.1512 141.056 29.7226C140.37 29.2727 139.491 29.0477 138.42 29.0477C137.349 29.0477 136.438 29.2619 135.688 29.6905C134.959 30.0976 134.402 30.6333 134.017 31.2975C133.631 31.9618 133.417 32.6689 133.374 33.4188H143.145Z"
+                fill="var(--pico-primary)"
+              />
+            </g>
+          </g>
+        </svg>
+    </a>
+    </div>
+    </li>
+  </ul>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#pricing">Preise</a></li>
+    <li><a href="#contact">Kontakt</a></li>
+  </ul>
+  <ul>
+    <div id="darkModeToggle">
+      <svg
+        id="moon-icon"
+        fill="none"
+        height="24px"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <!-- SVG code for a moon icon (dark mode) -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </g>
+        </svg>
+      </svg>
+      <input
+        id="darkModeSwitch"
+        name="darkmode"
+        type="checkbox"
+        role="switch"
+      />
+      <svg
+        id="sun-icon"
+        fill="none"
+        height="24px"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <!-- SVG code for a sun icon (light mode) -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </g>
+        </svg>
+      </svg>
+    </div>
+  </ul>
 </nav>
 
-
 <script>
-    // Desktop version
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const sunIcon = document.getElementById('sun-icon');
-    const moonIcon = document.getElementById('moon-icon');
-    const darkModeSwitch = document.getElementById('darkModeSwitch');
-    const html = document.documentElement;
-    let isDarkMode = false;
+  // Desktop version
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  const sunIcon = document.getElementById("sun-icon");
+  const moonIcon = document.getElementById("moon-icon");
+  const darkModeSwitch = document.getElementById("darkModeSwitch");
+  const html = document.documentElement;
+  let isDarkMode = false;
 
-    // Function to toggle dark/light mode
-    function toggleDarkMode() {
-        isDarkMode = !isDarkMode;
-        isDarkMode == true ? html.setAttribute('data-theme', 'dark') : html.setAttribute('data-theme', 'light');
-        darkModeSwitch.checked = isDarkMode;
-        /* html.classList.toggle('dark', isDarkMode); */
-        /* sunIcon.style.display = isDarkMode ? 'none' : 'block';
+  // Function to toggle dark/light mode
+  function toggleDarkMode() {
+    isDarkMode = !isDarkMode;
+    isDarkMode == true
+      ? html.setAttribute("data-theme", "dark")
+      : html.setAttribute("data-theme", "light");
+    darkModeSwitch.checked = isDarkMode;
+    /* html.classList.toggle('dark', isDarkMode); */
+    /* sunIcon.style.display = isDarkMode ? 'none' : 'block';
         moonIcon.style.display = isDarkMode ? 'block' : 'none'; */
-        localStorage.setItem('darkMode', isDarkMode ? 'dark' : 'light'); // Store user preference
-    }
+    localStorage.setItem("darkMode", isDarkMode ? "dark" : "light"); // Store user preference
+  }
 
-    // Add a click event listener to the toggle button
-    darkModeSwitch.addEventListener('click', toggleDarkMode);
-    /*     darkModeToggle.addEventListener('click', toggleDarkMode); */
+  // Add a click event listener to the toggle button
+  darkModeSwitch.addEventListener("click", toggleDarkMode);
+  /*     darkModeToggle.addEventListener('click', toggleDarkMode); */
 
-    // Check the user's preference and apply it on page load
-    const savedMode = localStorage.getItem('darkMode');
-    if (savedMode === 'dark') {
-        html.setAttribute('data-theme', 'dark');
-        darkModeSwitch.checked = true;
-        /*         sunIcon.style.display = 'none';
+  // Check the user's preference and apply it on page load
+  const savedMode = localStorage.getItem("darkMode");
+  if (savedMode === "dark") {
+    html.setAttribute("data-theme", "dark");
+    darkModeSwitch.checked = true;
+    /*         sunIcon.style.display = 'none';
                 moonIcon.style.display = 'block'; */
-    } else {
-        html.setAttribute('data-theme', 'light');
-        darkModeSwitch.checked = false;
-        /*         sunIcon.style.display = 'block';
+  } else {
+    html.setAttribute("data-theme", "light");
+    darkModeSwitch.checked = false;
+    /*         sunIcon.style.display = 'block';
                 moonIcon.style.display = 'none'; */
-    }
+  }
 </script>
