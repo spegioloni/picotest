@@ -1,21 +1,23 @@
 ---
 ---
-@import "pico";
+
+@use "pico";
 
 @font-face {
-  font-family: 'LeagueSpartan';
-  src: url("/assets/LeagueSpartan/LeagueSpartan-VariableFont_wght.ttf") format('truetype');
+  font-family: "LeagueSpartan";
+  src: url("/assets/fonts/LeagueSpartan/LeagueSpartan-VariableFont_wght.ttf")
+    format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url("/assets/Quicksand/Quicksand-VariableFont_wght.ttf") format('truetype');
+  font-family: "Quicksand";
+  src: url("/assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf")
+    format("truetype");
   font-display: swap;
 }
 
-
-body{
+body {
   font-family: Quicksand system-ui, sans-serif;
 }
 
@@ -25,86 +27,223 @@ h3,
 h4,
 h5,
 h6 {
- font-family: LeagueSpartan, system-ui, sans-serif;
- text-transform: uppercase;
- letter-spacing: -.06em;
+  font-family: LeagueSpartan, system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  font-weight: 800;
 }
 
+.customgradient {
+  background: linear-gradient(
+    to right,
+    var(--pico-primary),
+    var(--pico-secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.center {
+  text-align: center;
+}
 
-.customgradient{
-    background: -webkit-linear-gradient(var(--pico-primary), var(--pico-secondary));
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
+.text-left {
+  text-align: left;
+}
 
- .center{
-    text-align: center;
- }
+.price {
+  font-size: 1.5rem;
+  color: var(--pico-primary);
+  font-weight: 700;
+}
 
- ul.checkmark > li::before {
-    content: '✓ ';
-      
- }
+ul.checkmark > li::before {
+  content: "✓ ";
+}
 
- #hero{
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-size: cover;
-    background-color: var(--pico-background-color);
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='var(--pico-color)' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
- }
+#hero {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
- #hero hgroup h1{
+#hero hgroup h1 {
   font-size: 5rem;
- }
-
-
- @media only screen and (max-width: 600px) {
-  #hero hgroup h1{
-    font-size: 4rem;
-   }
 }
 
+@media only screen and (max-width: 600px) {
+  #hero hgroup h1 {
+    font-size: 4rem;
+  }
+}
 
+#Logo,a:hover {
+  transform: scale(105%);
+  transition: all 0.1s ease-in;
+}
+
+.customFooter{
+  background-color: var(--pico-color);
+  color: var(--pico-background-color);
+  fill: var(--pico-background-color)
+}
+
+//Logo and Animation -----------------------------------------
+
+#LogoDiv {
+  border-radius: var(--pico-border-radius);
+  border: var(--pico-border-width) solid var(--pico-secondary);
+  padding: 0.1rem 0.2rem;
+  animation: borderAnimation 1.2s ease-in forwards;
+}
+
+#frame path:nth-child(1) {
+  animation: letterAnimation .3s ease-in 0s forwards;
+} 
+#frame path:nth-child(2) {
+  animation: letterAnimation .3s ease-in .1s forwards;
+} 
+#frame path:nth-child(3) {
+  animation: letterAnimation .3s ease-in .2s forwards;
+} 
+#frame path:nth-child(4) {
+  animation: letterAnimation .3s ease-in .3s forwards;
+} 
+#frame path:nth-child(5) {
+  animation: letterAnimation .3s ease-in .4s forwards;
+} 
+
+@keyframes borderAnimation {
+  0% {
+    border-color: rgba(0,0,0,0);
+  }
+  80% {
+    border-color: rgba(0,0,0,0);
+  }
+  100% {
+    border-color: var(--pico-scondary);
+  }
   
- 
+}
 
- #Logo:hover{
-   transform: scale(110%);
-   transition: all .5s ease-in-out;
- }
+@keyframes letterAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
- #LogoDiv{
-   border-radius: var(--pico-border-radius);
-   border: var(--pico-border-width) solid var(--pico-secondary);
-   padding:  .1rem .2rem;
+//Stars animation ---------------------------------------------------
 
- }
+.diagonal-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--pico-background-color); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    var(--pico-background-color),
+    var(--pico-secondary)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    var(--pico-background-color),
+    var(--pico-secondary)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
- #frame :nth-child(1) {
-   animation: fadeIn .8s forwards;
- }
- #frame :nth-child(2) {
-   animation: fadeIn 1s forwards;
- }
- #frame :nth-child(3) {
-   animation: fadeIn 1.3s forwards;
- }
- #frame :nth-child(4) {
-   animation: fadeIn 1.7s forwards;
- }
- #frame :nth-child(5) {
-   animation: fadeIn 2s forwards;
- }
+  z-index: -1;
+}
 
- @keyframes fadeIn {
-   from {opacity: 0}
-   to {opacity: 1}
-   
- }
+// creates randomized star sizes
+@function stars($n) {
+  $value: "#{random(2000)}px #{random(2000)}px #767676";
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(2000)}px #{random(2000)}px #767676";
+  }
+  @return unquote($value);
+}
 
+// store random stars
+$stars-small: stars(700);
+$stars-medium: stars(200);
+$stars-big: stars(100);
 
- 
+.stars {
+  z-index: -1;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transition: opacity 1s ease-in-out;
+}
+
+.stars > .small {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $stars-small;
+  animation: starsAnimation 50s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $stars-small;
+  }
+}
+
+.stars > .medium {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $stars-medium;
+  animation: starsAnimation 100s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $stars-medium;
+  }
+}
+
+.stars > .big {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: $stars-big;
+  border-radius: 100%;
+  animation: starsAnimation 150s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $stars-big;
+    border-radius: 100%;
+  }
+}
+
+// swap from/to values to reverse animation
+@keyframes starsAnimation {
+  from {
+    transform: translateY(-2000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
